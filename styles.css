@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F5F9;
+    
+}
+.card {
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 13px;
+    background-color: #ffffff;
+    /* gap:10px; */
+    box-shadow: 7px 7px 7px #E5EAF0;
+}
+.img {
+    width:100%;
+    height: 100%;
+    border-radius: 13px;
+    overflow-y: hidden;
+    /* padding-bottom: 15px; */
+    object-fit: cover;
+}
+
+.img img {
+    height: 100%;
+    width: 100%;
+    /* border-radius: 10px; */
+}
+.top-img{
+    position: relative;
+}
+.svg{
+    width: 100%;
+    /* height: 100%; */
+    position: absolute;
+    left:0;
+    bottom:-2px;
+}
+.svg img{
+    width: 100%;
+    height:100%;
+}
+
+/* content */
+.content{
+    /* margin:30px 0; */
+    padding:0px 30px 20px;
+
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    /* font-size: 3vmin; */
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+p{
+    font-family: 'Lato',sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color:#677489;
+}
+h4{
+    font-family: 'Lato',sans-serif;
+}
+
+
+
+/* foot */
+
+.foot{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap:10px;
+    padding:25px 30px;
+    border-top: 0.09rem solid #F2F5F9;
+}
+
+.avatar{
+    width:45px;
+    height:45px;
+}
+.avatar img{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    border: 5px solid #F2F5F9;
+}
+.foot p{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media(max-width:640px){
+    .container{
+        /* margin:30px; */
+        padding:40px;
+        overflow: hidden;
+    }
+    body{
+        overflow: hidden;
+    }
+}
